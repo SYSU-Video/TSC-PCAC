@@ -12,7 +12,9 @@ TSC-PCAC: Voxel Transformer and Sparse Convolution Based Point Cloud Attribute C
 *IEEE Transactions on Broadcasting (TBC), 2024*
 
 ## Abstract
+<p align="justify">
 Point cloud has been the mainstream representation for advanced 3D applications, such as virtual reality and augmented reality. However, the massive data amounts of point clouds is one of the most challenging issues for transmission and storage. In this paper, we propose an end-to-end voxel Transformer and Sparse Convolution based Point Cloud Attribute Compression (TSC-PCAC) for 3D broadcasting. Firstly, we present a framework of the TSC-PCAC, which includes Transformer and Sparse Convolutional Module (TSCM) based variational autoencoder and channel context module. Secondly, we propose a two-stage TSCM, where the first stage focuses on modeling local dependencies and feature representations of the point clouds, and the second stage captures global features through spatial and channel pooling encompassing larger receptive fields. This module effectively extracts global and local inter-point relevance to reduce informational redundancy. Thirdly, we design a TSCM based channel context module to exploit inter-channel correlations, which improves the predicted probability distribution of quantized latent representations and thus reduces the bitrate. Experimental results indicate that the proposed TSC-PCAC method achieves an average of 38.53%, 21.30%, and 11.19% bitrate reductions on datasets 8iVFB, Owlii, 8iVSLF, Volograms, and MVUB compared to the Sparse-PCAC, NF-PCAC, and G-PCC v23 methods, respectively. The encoding/decoding time costs are reduced 97.68%/98.78% on average compared to the Sparse-PCAC. The source code and the trained TSC-PCAC models are available at https://github.com/igizuxo/TSC-PCAC.
+</p>
 <p align="center">
   <img src="framework.png" alt="Framework Overview" width="800"/>
 </p>
